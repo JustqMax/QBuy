@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -15,6 +16,8 @@ class MainController extends Controller
     }
 
     public function categories(){
+        
+        Category::where()->first();
         return view('categories');
     }
 
@@ -25,5 +28,5 @@ class MainController extends Controller
     public function product($product = null){
         return view('product', ['product' => $product]);
     }
-
+    
 }
