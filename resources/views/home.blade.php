@@ -5,5 +5,8 @@
     <div class="container">
             <h1>Все товары</h1>
 
+            <div class="row">
+                @include('cart')
+            </div>
     </div>
 @endsection
