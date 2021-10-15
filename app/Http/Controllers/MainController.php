@@ -16,12 +16,11 @@ class MainController extends Controller
     }
 
     public function categories(){
-        
-        Category::where()->first();
         return view('categories');
     }
 
     public function category($category = null){
+        $categoryObject = Category::where('code', $category)->first();
         return view('category', ['category' => $category]);
     }
 
