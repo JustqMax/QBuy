@@ -19,6 +19,10 @@ Route::get('/about', 'MainController@about')->name('about');
 
 Route::get('/categories', 'MainController@categories')->name('categories');
 
-Route::get('/categories/{category}', 'MainController@category')->name('category');
+Route::get('/{category}', 'MainController@category')->name('category');
 
-Route::get('/mobiles/{product?}', 'MainController@product');
+Route::get('/{category}/{product?}', 'MainController@product')->name('product');
+
+Route::get('/basket', 'MainController@basket')->name('basket');
+
+Route::get('/basket/place', 'MainController@basketPlace')->name('basket-place');
