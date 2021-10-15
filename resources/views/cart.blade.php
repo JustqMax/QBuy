@@ -10,7 +10,7 @@
             <p>71990 ₽</p>
             <p>
             <form action="http://internet-shop.tmweb.ru/basket/add/1" method="POST">
-                <button type="submit" class="btn btn-primary" role="button">В корзину</button>
+                <button type="{{route('basket')}}" role="button">В корзину</button>
                 <a href="http://internet-shop.tmweb.ru/mobiles/iphone_x_64" class="btn btn-default"
                     role="button">Подробнее</a>
                 <input type="hidden" name="_token" value="2MXoxsR5gDBYnPe5CRx8jqVgJTvMzcjtyml1dbYk">

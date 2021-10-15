@@ -25,7 +25,7 @@
                     <a class="nav-link" href="{{route('categories')}}">Категории</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Корзина</a>
+                    <a class="nav-link" href="{{route('basket')}}">Корзина</a>
                 </li>
             </ul>
         </div>
