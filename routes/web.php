@@ -26,4 +26,3 @@ Route::get('/{category}/{product?}', 'MainController@product')->name('product');
 Route::get('/basket', 'MainController@basket')->name('basket');
 
 Route::get('/basket/place', 'MainController@basketPlace')->name('basket-place');
-
