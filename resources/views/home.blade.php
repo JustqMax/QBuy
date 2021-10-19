@@ -3,10 +3,13 @@
 
 @section('main_content')
     <div class="container">
-            <h1>Все товары</h1>
+        <h1>Все товары</h1>
 
-            <div class="row">
-                @include('cart')
-            </div>
+        <div class="row">
+            @foreach ($products as $product)
+                @include('cart', compact('product'))
+            @endforeach
+
+        </div>
     </div>
 @endsection
